@@ -1,6 +1,7 @@
 package bubbletempo.app.wordpress.me.synology.chienpao.bubbletempo;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.wearable.view.WatchViewStub;
 import android.util.Log;
@@ -30,6 +31,8 @@ public class MainActivity extends Activity {
     }
 
     public void onStartFunc(View view){
-
+        Intent intent = new Intent();
+        intent.setClass(this, GameActivity.class);
+        startActivity(intent);
     }
 }
